@@ -8,4 +8,6 @@
   align-items: flex-end;
   justify-content: flex-end;
   z-index: 1;
+  object-fit: cover;
+  object-position: top;
 }

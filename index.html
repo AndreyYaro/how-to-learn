@@ -13,7 +13,7 @@
         <h1 class="header__title">Научиться учиться</h1>
         <p class="header__subtitle">
           Какие современные и эффективные подходы к обучению вы можете применить
-          в своей жизни <a href="#" class="header__link href"> Узнать&rarr;</a>
+          в своей жизни <a href="#" class="header__link link"> Узнать&rarr;</a>
         </p>
         <img
           src="./images/header-image.png"
@@ -22,8 +22,8 @@
         />
         <div class="header__square-pic rotation"></div>
       </header>
-      <main>
-        <section class="discription">
+      <main class="content">
+        <section class="description">
           <div class="two-columns">
             <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
             <div class="two-columns__main-text">
@@ -50,7 +50,7 @@
         <section class="techniques">
           <h2 class="section-title">Техники обучения</h2>
           <p class="section-subtitle">Пять практик от Барбары Оакли</p>
-          <ol class="cards">
+          <ul class="cards">
             <li class="cards__item">
               <img
                 class="cards__image"
@@ -111,29 +111,29 @@
                 кажется, что вы владеете новой темой.
               </p>
             </li>
-          </ol>
+          </ul>
         </section>
         <section class="video">
           <h2 class="section-title">Видео нa TED</h2>
           <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
-          <div class="video__iframes">
-            <iframe
-              class="video__iframe"
-              id="kaufman-video"
-              width="515"
-              height="316"
-              src="https://www.youtube.com/embed/5MgBikgcWnY"
-              allowfullscreen
-            ></iframe>
-            <iframe
-              class="video__iframe"
-              id="tim-urban-video"
-              width="515"
-              height="316"
-              src="https://www.youtube.com/embed/arj7oStGLkU"
-              allowfullscreen
-            ></iframe>
-          </div>
+          <ul class="video__iframes">
+            <li>
+              <iframe
+                class="video__iframe"
+                id="kaufman-video"
+                src="https://www.youtube.com/embed/5MgBikgcWnY"
+                allowfullscreen
+              ></iframe>
+            </li>
+            <li>
+              <iframe
+                class="video__iframe"
+                id="tim-urban-video"
+                src="https://www.youtube.com/embed/arj7oStGLkU"
+                allowfullscreen
+              ></iframe>
+            </li>
+          </ul>
         </section>
         <section class="oakley">
           <div class="two-columns">
@@ -155,7 +155,7 @@
         <section class="feynman">
           <h2 class="feynman__title">Метод Фейнмана</h2>
           <p class="feynman__subtitle">Выучить и не забыть</p>
-          <a href="#" class="feynman__link href">Подробнее &rarr;</a>
+          <a href="#" class="feynman__link link">Подробнее &rarr;</a>
         </section>
         <section class="digits">
           <h2 class="section-title">Цифры и факты</h2>
@@ -209,14 +209,16 @@
           <div class="khan__container">
             <p class="khan__author">Салман Хан</p>
             <h2 class="khan__title">Весь мир — школа</h2>
-            <p class="khan__quote">
-              Страсть и новаторство Сала Хана меняют процесс обучения миллионов
-              студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать
-              всем, кто занимается образованием — так учащиеся повсюду смогут
-              получить навыки и знания, которые приносят успех в школе, карьере
-              и жизни.
-            </p>
-            <p class="khan__quote-author">Джордж Лукас</p>
+            <blockquote>
+              <p class="khan__quote">
+                Страсть и новаторство Сала Хана меняют процесс обучения
+                миллионов студентов по всему миру. Книгу «Весь мир — школа»
+                нужно прочитать всем, кто занимается образованием — так учащиеся
+                повсюду смогут получить навыки и знания, которые приносят успех
+                в школе, карьере и жизни.
+              </p>
+            </blockquote>
+            <h3 class="khan__quote-author">Джордж Лукас</h3>
             <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
             <div class="khan__book-container">
               <img
@@ -224,7 +226,7 @@
                 class="khan__book-pic"
                 alt="обложка книги Весь мир-школа"
               />
-              <a class="khan__buy-link href">Купить книгу &rarr;</a>
+              <a class="khan__buy-link link">Купить книгу &rarr;</a>
             </div>
           </div>
         </section>
@@ -304,32 +306,40 @@
           <p class="section-subtitle">
             Больше материалов о техниках и лайфхаках обучения
           </p>
-          <div class="resources__logo-zone">
-            <a class="resources__link" href="#"
-              ><img
-                class="resources__logo href"
-                src="./images/logo/resources-arzamas.svg"
-                alt="лого Арзамас"
-            /></a>
-            <a class="resources__link" href="#"
-              ><img
-                class="resources__logo href"
-                src="./images/logo/resources-n1.svg"
-                alt="лого N+1"
-            /></a>
-            <a class="resources__link" href="#"
-              ><img
-                class="resources__logo href"
-                src="./images/logo/resources-strelka.svg"
-                alt="лого Стрелка"
-            /></a>
-            <a class="resources__link" href="#"
-              ><img
-                class="resources__logo href"
-                src="./images/logo/resources-polka.svg"
-                alt="лого Полка"
-            /></a>
-          </div>
+          <ul class="resources__logo-zone">
+            <li>
+              <a class="resources__link" href="#"
+                ><img
+                  class="resources__logo link"
+                  src="./images/logo/resources-arzamas.svg"
+                  alt="лого Арзамас"
+              /></a>
+            </li>
+            <li>
+              <a class="resources__link" href="#"
+                ><img
+                  class="resources__logo link"
+                  src="./images/logo/resources-n1.svg"
+                  alt="лого N+1"
+              /></a>
+            </li>
+            <li>
+              <a class="resources__link" href="#"
+                ><img
+                  class="resources__logo link"
+                  src="./images/logo/resources-strelka.svg"
+                  alt="лого Стрелка"
+              /></a>
+            </li>
+            <li>
+              <a class="resources__link" href="#"
+                ><img
+                  class="resources__logo link"
+                  src="./images/logo/resources-polka.svg"
+                  alt="лого Полка"
+              /></a>
+            </li>
+          </ul>
         </section>
       </main>
       <footer class="footer">
@@ -340,39 +350,52 @@
           </div>
           <div class="footer__column footer__column_content_info">
             <h3 class="footer__column-heading">О практикуме</h3>
-            <nav class="footer__column-links">
-              <a href="#" class="footer__column-link href">Главная</a>
-              <a href="#" class="footer__column-link href">Концепция</a>
-              <a href="#" class="footer__column-link href">Наставники</a>
+            <nav>
+              <ul class="footer__column-links">
+                <li>
+                  <a href="#" class="footer__column-link link">Главная</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__column-link link">Концепция</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__column-link link">Наставники</a>
+                </li>
+              </ul>
             </nav>
           </div>
           <div class="footer__column footer__column_content_social">
             <h3 class="footer__column-heading">Соцсети</h3>
-            <nav class="footer__column-links">
-              <a href="#" class="footer__column-link href"
-                ><img
-                  class="footer__social-icon"
-                  src="./images/facebook_color_white.svg"
-                  alt="Иконка Facebook"
-                />
-                Facebook</a
-              >
-              <a href="#" class="footer__column-link href"
-                ><img
-                  class="footer__social-icon"
-                  src="./images/vk_color_white.svg"
-                  alt="Иконка VKontakte"
-                />
-                VKontakte</a
-              >
-              <a href="#" class="footer__column-link href"
-                ><img
-                  class="footer__social-icon"
-                  src="./images/instagram_color_white.svg"
-                  alt="Иконка Intagram"
-                />
-                Intagram</a
-              >
+            <nav>
+              <ul class="footer__column-links">
+                <li>
+                  <a href="#" class="footer__column-link link"
+                    ><img
+                      class="footer__social-icon"
+                      src="./images/facebook_color_white.svg"
+                      alt="Иконка Facebook"
+                    />Facebook</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer__column-link link">
+                    <img
+                      class="footer__social-icon"
+                      src="./images/vk_color_white.svg"
+                      alt="Иконка VKontakte"
+                    />VKontakte</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer__column-link link">
+                    <img
+                      class="footer__social-icon"
+                      src="./images/instagram_color_white.svg"
+                      alt="Иконка Intagram"
+                    />Intagram</a
+                  >
+                </li>
+              </ul>
             </nav>
           </div>
         </div>
